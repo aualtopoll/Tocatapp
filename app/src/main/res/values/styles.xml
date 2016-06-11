@@ -1,11 +1,50 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="TocatappTheme" parent="android:Theme.Material">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ta_center" parent="TocatappTheme">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ta_bigTitle" parent="ta_center">
+        <item name="android:textSize">@dimen/ta_bigText</item>
+    </style>
+
+    <style name="ta_mediumTitle" parent="ta_center">
+        <item name="android:textSize">@dimen/ta_mediumText</item>
+    </style>
+
+    <style name="ta_inputView" parent="TocatappTheme">
+        <item name="android:layout_marginTop">@dimen/ta_formViewVerticalGap</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ta_discreteSeekBarStyle">
+        <item name="dsb_progressColor">@color/colorDescreetBarProgress</item>
+        <item name="dsb_indicatorTextAppearance">@color/colorDescreetBarText</item>
+        <item name="dsb_indicatorColor">@color/colorDescreetBarBubble</item>
+    </style>
+
+    <style name="ta_buttonSuccess" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlHighlight">@color/colorHighlight</item>
+        <item name="android:colorButtonNormal">@color/colorSuccess</item>
+    </style>
+
+    <style name="ta_buttonBack" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlHighlight">@color/colorHighlight</item>
+        <item name="android:colorButtonNormal">@color/colorSuccess</item>
+    </style>
+
+    <style name="ta_buttonCancel" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlHighlight">@color/colorHighlight</item>
+        <item name="android:colorButtonNormal">@color/colorSuccess</item>
     </style>
 
 </resources>

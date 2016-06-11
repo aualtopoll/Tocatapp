@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tocatapp</string>
+    <string name="ta_musicianRegistration">Registro de músico</string>
+    <string name="ta_stepOne">Paso 1</string>
+    <string name="ta_age">Edad</string>
+    <string name="ta_email">Correo electrónico</string>
+    <string name="ta_name">Nombre</string>
+    <string name="ta_lastname">Apellido</string>
+    <string name="ta_personalInfo">Información personal</string>
+    <string name="ta_cancel">Cancelar</string>
+    <string name="ta_next">Siguiente</string>
+    <string name="ta_years">Años</string>
+</resources>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Tocatapp</string>
+    <string name="ta_musicianRegistration">Musician Registration</string>
+    <string name="ta_stepOne">Step 1</string>
+    <string name="ta_personalInfo">Personal information</string>
+    <string name="ta_name">Name</string>
+    <string name="ta_lastname">Last Name</string>
+    <string name="ta_email">Email</string>
+    <string name="ta_age">Age</string>
+    <string name="ta_cancel">Cancel</string>
+    <string name="ta_next">Next</string>
+    <string name="ta_years">Years</string>
 </resources>

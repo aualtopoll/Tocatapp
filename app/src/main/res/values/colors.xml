@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorDescreetBarProgress">@color/accent_material_dark</color>
+    <color name="colorDescreetBarText">@color/primary_dark_material_dark</color>
+    <color name="colorDescreetBarBubble">@color/accent_material_dark</color>
+    <color name="colorSuccess">#24AFB2</color>
+    <color name="colorHighlight">#1c898b</color>
+
 </resources>
