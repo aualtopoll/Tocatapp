@@ -15,7 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MusicianRegistrationOne"></activity>
+        <activity android:name=".MusicianRegistrationOne" />
+        <activity android:name=".MusicianRegistrationTwo" />
+        <activity android:name=".MusicianRegistrationThree" />
+        <activity android:name=".Congratulations"></activity>
     </application>
 
 </manifest>

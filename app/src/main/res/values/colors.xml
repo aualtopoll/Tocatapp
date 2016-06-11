@@ -8,5 +8,8 @@
     <color name="colorDescreetBarBubble">@color/accent_material_dark</color>
     <color name="colorSuccess">#24AFB2</color>
     <color name="colorHighlight">#1c898b</color>
+    <color name="colorDisabled">#757575</color>
+    <color name="colorFinish">#FFCC00</color>
+    <color name="colorFinishHighlight">#B69204</color>
 
 </resources>

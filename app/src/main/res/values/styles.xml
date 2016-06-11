@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="TocatappTheme" parent="android:Theme.Material">
+    <style name="TocatappTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -14,6 +14,7 @@
 
     <style name="ta_bigTitle" parent="ta_center">
         <item name="android:textSize">@dimen/ta_bigText</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="ta_mediumTitle" parent="ta_center">
@@ -22,8 +23,18 @@
 
     <style name="ta_inputView" parent="TocatappTheme">
         <item name="android:layout_marginTop">@dimen/ta_formViewVerticalGap</item>
-        <item name="android:ems">10</item>
+        <item name="android:textSize">@dimen/ta_normalText</item>
         <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ta_checkboxView" parent="TocatappTheme">
+        <item name="android:layout_marginTop">@dimen/ta_formViewVerticalGap</item>
+        <item name="android:textSize">@dimen/ta_normalText</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="ta_inputLabel" parent="TocatappTheme">
+        <item name="android:textSize">@dimen/ta_normalText</item>
     </style>
 
     <style name="ta_discreteSeekBarStyle">
@@ -37,9 +48,14 @@
         <item name="android:colorButtonNormal">@color/colorSuccess</item>
     </style>
 
+    <style name="ta_buttonFinish" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlHighlight">@color/colorFinish</item>
+        <item name="android:colorButtonNormal">@color/colorFinishHighlight</item>
+    </style>
+
     <style name="ta_buttonBack" parent="Theme.AppCompat.Light">
-        <item name="android:colorControlHighlight">@color/colorHighlight</item>
-        <item name="android:colorButtonNormal">@color/colorSuccess</item>
+        <item name="android:colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:colorButtonNormal">@color/colorDisabled</item>
     </style>
 
     <style name="ta_buttonCancel" parent="Theme.AppCompat.Light">
@@ -47,4 +63,13 @@
         <item name="android:colorButtonNormal">@color/colorSuccess</item>
     </style>
 
+    <style name="ta_congratulationsHeader" parent="ta_bigTitle">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">@color/colorFinish</item>
+    </style>
+
+    <style name="ta_congratulationsMessage">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>

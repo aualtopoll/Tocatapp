@@ -5,18 +5,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.tocatapp.tocatapp.helpers.UserData;
-
-public class MainActivity extends AppCompatActivity {
+public class MusicianRegistrationTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        UserData.flush(this);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_musician_registration_two);
     }
 
-    public void goToRegistration(View view) {
+    public void goToStepThree(View view) {
+
+        Intent intent = new Intent(this, MusicianRegistrationThree.class);
+        startActivity(intent);
+    }
+
+    public void goBack(View view) {
         Intent intent = new Intent(this, MusicianRegistrationOne.class);
         startActivity(intent);
     }

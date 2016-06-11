@@ -11,4 +11,25 @@
     <string name="ta_cancel">Cancelar</string>
     <string name="ta_next">Siguiente</string>
     <string name="ta_years">Años</string>
+    <string name="ta_stepThree">Paso 3</string>
+    <string name="ta_stepTwo">Paso 2</string>
+    <string name="ta_selectYourInstruments">Selecciona los instrumentos que puedes tocar</string>
+    <string name="ta_back">Atrás</string>
+    <string name="ta_instrument_bass">Bajo</string>
+    <string name="ta_instrument_drums">Batería</string>
+    <string name="ta_instrument_guitar">Guitarra</string>
+    <string name="ta_instrument_keyboards">Teclados</string>
+    <string name="ta_instrument_saxophone">Saxofón</string>
+    <string name="ta_instrument_vocals">Vocalista</string>
+    <string name="ta_selectYourMusicStyles">Selecciona los estilos de música que puedes tocar</string>
+    <string name="ta_music_styles_funk">Funk</string>
+    <string name="ta_music_styles_pop">Pop</string>
+    <string name="ta_music_styles_reggae">Reggae</string>
+    <string name="ta_music_styles_rock">Rock</string>
+    <string name="ta_music_styles_alternative">Alternativo</string>
+    <string name="ta_finish">Finalizar</string>
+    <string name="ta_congratulations">¡Felicitaciones!</string>
+    <string name="ta_welcomeToTheNetwork">¡Bienvenido(a) a la red de Tocatapp!</string>
+    <string name="ta_createAccount">Crear una cuenta</string>
+    <string name="ta_music_styles_punk">Punk</string>
 </resources>
