@@ -85,21 +85,7 @@
                 style="@style/ta_checkboxView"
                 android:checked="false" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ta_music_styles_reggae"
-                android:id="@+id/checkBox5"
-                style="@style/ta_checkboxView"
-                android:checked="false" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ta_music_styles_funk"
-                android:id="@+id/checkBox6"
-                style="@style/ta_checkboxView"
-                android:checked="false" />
         </LinearLayout>
 
         <LinearLayout

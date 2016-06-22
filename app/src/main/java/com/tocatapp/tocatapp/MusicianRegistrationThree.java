@@ -14,8 +14,7 @@ public class MusicianRegistrationThree extends AppCompatActivity {
     }
 
     public void goBack(View view) {
-        Intent intent = new Intent(this, MusicianRegistrationTwo.class);
-        startActivity(intent);
+        finish();
     }
 
     public void finish(View view) {
