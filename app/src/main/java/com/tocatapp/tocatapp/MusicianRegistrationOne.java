@@ -14,7 +14,6 @@ public class MusicianRegistrationOne extends AppCompatActivity {
         setContentView(R.layout.activity_musician_registration_one);
     }
 
-
     public void goToStepTwo(View view) {
         Intent intent = new Intent(this, MusicianRegistrationTwo.class);
         startActivity(intent);

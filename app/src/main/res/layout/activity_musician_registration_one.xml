@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -49,70 +48,75 @@
             android:id="@+id/textView4"
             android:layout_gravity="center_horizontal" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="@string/ta_name"
-            style="@style/ta_inputView"
-            android:id="@+id/textFirstName" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="@string/ta_lastname"
-            style="@style/ta_inputView"
-            android:id="@+id/textLastName" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="@string/ta_email"
-            android:id="@+id/textEmail"
-            style="@style/ta_inputView" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/ta_inputLabel"
-            android:text="@string/ta_age"
-            android:id="@+id/textView5"
-            android:paddingLeft="4dp"
-            android:paddingTop="18dp" />
-
-        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
-            android:layout_width="392dp"
-            android:layout_height="wrap_content"
-            app:dsb_min="@integer/ta_minAllowedAge"
-            app:dsb_max="@integer/ta_maxAllowedAge"
-            style="@style/ta_discreteSeekBarStyle"
-            android:id="@+id/seekBarAge" />
-
-        <LinearLayout
-            android:layout_alignParentLeft="true"
+        <ScrollView
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/ta_formViewVerticalGap">
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" >
 
-            <Button
-                android:id="@+id/action_bar_button_cancel"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:text="@string/ta_cancel"
-                android:layout_weight="1"
-                android:onClick="goBack"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/action_bar_button_ok"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/ta_next"
-                android:theme="@style/ta_buttonSuccess"
-                android:onClick="goToStepTwo"/>
-        </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/ta_name"
+                    style="@style/ta_inputView"
+                    android:id="@+id/textFirstName" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/ta_lastname"
+                    style="@style/ta_inputView"
+                    android:id="@+id/textLastName" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/ta_email"
+                    android:id="@+id/textEmail"
+                    style="@style/ta_inputView" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/ta_password"
+                    android:ems="10"
+                    android:id="@+id/textPassword"
+                    style="@style/ta_inputView" />
+
+                <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/ta_formViewVerticalGap">
+
+                    <Button
+                        android:id="@+id/action_bar_button_cancel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/ta_cancel"
+                        android:layout_weight="1"
+                        android:onClick="goBack"/>
+
+                    <Button
+                        android:id="@+id/action_bar_button_ok"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ta_next"
+                        android:theme="@style/ta_buttonSuccess"
+                        android:onClick="goToStepTwo"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 </RelativeLayout>

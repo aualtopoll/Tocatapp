@@ -31,4 +31,5 @@
     <string name="ta_music_styles_alternative">Alternative</string>
     <string name="ta_music_styles_reggae">Reggae</string>
     <string name="ta_music_styles_punk">punk</string>
+    <string name="ta_password">Password</string>
 </resources>

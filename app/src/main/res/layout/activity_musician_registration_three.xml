@@ -47,71 +47,116 @@
             android:id="@+id/textView4"
             android:layout_gravity="center_horizontal" />
 
-        <LinearLayout
-            android:orientation="vertical"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView3" >
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ta_music_styles_rock"
-                android:id="@+id/checkBox"
-                style="@style/ta_checkboxView"
-                android:checked="false" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ta_music_styles_pop"
-                android:id="@+id/checkBox2"
-                style="@style/ta_checkboxView"
-                android:checked="false" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_rock"
+                    android:id="@+id/checkBox"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ta_music_styles_alternative"
-                android:id="@+id/checkBox3"
-                style="@style/ta_checkboxView"
-                android:checked="false" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_pop"
+                    android:id="@+id/checkBox2"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ta_music_styles_punk"
-                android:id="@+id/checkBox4"
-                style="@style/ta_checkboxView"
-                android:checked="false" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_alternative"
+                    android:id="@+id/checkBox3"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_punk"
+                    android:id="@+id/checkBox4"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_punk"
+                    android:id="@+id/checkBox5"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_punk"
+                    android:id="@+id/checkBox6"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_punk"
+                    android:id="@+id/checkBox7"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_punk"
+                    android:id="@+id/checkBox8"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ta_music_styles_punk"
+                    android:id="@+id/checkBox9"
+                    style="@style/ta_checkboxView"
+                    android:checked="false" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/ta_formViewVerticalGap">
+
+                    <Button
+                        android:id="@+id/action_bar_button_cancel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/ta_back"
+                        android:theme="@style/ta_buttonBack"
+                        android:layout_weight="1"
+                        android:onClick="goBack" />
+
+                    <Button
+                        android:id="@+id/action_bar_button_ok"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ta_finish"
+                        android:theme="@style/ta_buttonFinish"
+                        android:onClick="finish"/>
+                </LinearLayout>
 
 
-        </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
 
-        <LinearLayout
-            android:layout_alignParentLeft="true"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/ta_formViewVerticalGap">
-
-            <Button
-                android:id="@+id/action_bar_button_cancel"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:text="@string/ta_back"
-                android:theme="@style/ta_buttonBack"
-                android:layout_weight="1"
-                android:onClick="goBack" />
-
-            <Button
-                android:id="@+id/action_bar_button_ok"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/ta_finish"
-                android:theme="@style/ta_buttonFinish"
-                android:onClick="finish"/>
-        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

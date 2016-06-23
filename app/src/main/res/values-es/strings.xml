@@ -32,4 +32,5 @@
     <string name="ta_welcomeToTheNetwork">¡Bienvenido(a) a la red de Tocatapp!</string>
     <string name="ta_createAccount">Crear una cuenta</string>
     <string name="ta_music_styles_punk">Punk</string>
+    <string name="ta_password">Contraseña</string>
 </resources>
