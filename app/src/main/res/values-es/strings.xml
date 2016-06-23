@@ -33,4 +33,9 @@
     <string name="ta_createAccount">Crear una cuenta</string>
     <string name="ta_music_styles_punk">Punk</string>
     <string name="ta_password">Contraseña</string>
+    <string name="ta_bad_field">Campo erróneo</string>
+    <string name="ta_invalid_email">Email incorrecto</string>
+    <string name="ta_invalid_fname">Nombre incorrecto</string>
+    <string name="ta_invalid_lastname">Apellido incorrecto</string>
+    <string name="ta_invalid_pass">La contraseña debe tener un largo de entre 4 a 10 caracteres alfanuméricos</string>
 </resources>
