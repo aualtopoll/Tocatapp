@@ -3,22 +3,23 @@
     package="com.tocatapp.tocatapp">
 
     <application
+        android:name=".TocataApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/TocatappTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MusicianRegistrationOne" />
-        <activity android:name=".MusicianRegistrationTwo" />
-        <activity android:name=".MusicianRegistrationThree" />
-        <activity android:name=".Congratulations"></activity>
+        <activity android:name=".activity.MusicianRegistrationOne" />
+        <activity android:name=".activity.MusicianRegistrationTwo" />
+        <activity android:name=".activity.MusicianRegistrationThree" />
+        <activity android:name=".activity.Congratulations" />
     </application>
 
 </manifest>

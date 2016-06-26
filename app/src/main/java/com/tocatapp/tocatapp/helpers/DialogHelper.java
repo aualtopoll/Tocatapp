@@ -8,10 +8,14 @@ import com.tocatapp.tocatapp.R;
 
 public class DialogHelper {
 
-    public static void showBadFieldHelper(AppCompatActivity context, int messageId) {
+    public static void showAboutUs(AppCompatActivity context) {
+        showSimpleOkDialog(context, R.string.ta_about, R.string.ta_about_text);
+    }
+
+    private static void showSimpleOkDialog(AppCompatActivity context, int title, int messageId) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setMessage(messageId)
-                .setTitle(R.string.ta_bad_field);
+                .setTitle(title);
         builder.setPositiveButton(R.string.ta_back, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -22,4 +26,5 @@ public class DialogHelper {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+
 }

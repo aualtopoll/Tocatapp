@@ -1,25 +1,30 @@
-package com.tocatapp.tocatapp;
+package com.tocatapp.tocatapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class MusicianRegistrationTwo extends AppCompatActivity {
+import com.tocatapp.tocatapp.R;
 
-    private static final String TAG = MusicianRegistrationOne.class.getSimpleName();
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+public class MusicianRegistrationTwo extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_musician_registration_two);
+        ButterKnife.bind(this);
     }
 
+    @OnClick(R.id.btnOk)
     public void goToStepThree(View view) {
         Intent intent = new Intent(this, MusicianRegistrationThree.class);
         startActivity(intent);
     }
 
+    @OnClick(R.id.btnBack)
     public void goBack(View view) {
        finish();
     }

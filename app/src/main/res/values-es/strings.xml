@@ -38,4 +38,8 @@
     <string name="ta_invalid_fname">Nombre incorrecto</string>
     <string name="ta_invalid_lastname">Apellido incorrecto</string>
     <string name="ta_invalid_pass">La contraseña debe tener un largo de entre 4 a 10 caracteres alfanuméricos</string>
+    <string name="ta_about">Acerca de nosotros</string>
+    <string name="ta_ok">Aceptar</string>
+    <string name="ta_close_app">Salir de la aplicación</string>
+    <string name="ta_about_text">©2016, Tocatapp</string>
 </resources>

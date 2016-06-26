@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.tocatapp.tocatapp.MusicianRegistrationThree"
+    tools:context=".activity.MusicianRegistrationThree"
     android:background="@drawable/bg_registration">
 
     <LinearLayout
@@ -136,22 +136,20 @@
                     android:layout_marginTop="@dimen/ta_formViewVerticalGap">
 
                     <Button
-                        android:id="@+id/action_bar_button_cancel"
+                        android:id="@+id/btnBack"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/ta_back"
                         android:theme="@style/ta_buttonBack"
-                        android:layout_weight="1"
-                        android:onClick="goBack" />
+                        android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/action_bar_button_ok"
+                        android:id="@+id/btnOk"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/ta_finish"
-                        android:theme="@style/ta_buttonFinish"
-                        android:onClick="finish"/>
+                        android:theme="@style/ta_buttonFinish" />
                 </LinearLayout>
 
 

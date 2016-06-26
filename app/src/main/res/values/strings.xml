@@ -37,4 +37,8 @@
     <string name="ta_invalid_lastname">Invalid lastname</string>
     <string name="ta_invalid_email">Invalid email</string>
     <string name="ta_invalid_pass">The password must be an alphanumeric string between 4 and 10 characters long</string>
+    <string name="ta_about">About us</string>
+    <string name="ta_about_text">©2016, Tocatapp</string>
+    <string name="ta_ok">Ok</string>
+    <string name="ta_close_app">Exit application</string>
 </resources>

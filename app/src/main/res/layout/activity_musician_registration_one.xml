@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.tocatapp.tocatapp.MusicianRegistrationOne"
+    tools:context=".activity.MusicianRegistrationOne"
     android:background="@drawable/bg_registration"
     android:clickable="true">
 
@@ -64,7 +64,7 @@
                     android:inputType="textPersonName"
                     android:hint="@string/ta_name"
                     style="@style/ta_inputView"
-                    android:id="@+id/textFirstName" />
+                    android:id="@+id/inputFirstName" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -72,14 +72,14 @@
                     android:inputType="textPersonName"
                     android:hint="@string/ta_lastname"
                     style="@style/ta_inputView"
-                    android:id="@+id/textLastName" />
+                    android:id="@+id/inputLastName" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:hint="@string/ta_email"
-                    android:id="@+id/textEmail"
+                    android:id="@+id/inputEmail"
                     style="@style/ta_inputView" />
 
                 <EditText
@@ -88,7 +88,7 @@
                     android:inputType="textPassword"
                     android:hint="@string/ta_password"
                     android:ems="10"
-                    android:id="@+id/textPassword"
+                    android:id="@+id/inputPassword"
                     style="@style/ta_inputView" />
 
                 <LinearLayout
@@ -99,21 +99,19 @@
                     android:layout_marginTop="@dimen/ta_formViewVerticalGap">
 
                     <Button
-                        android:id="@+id/action_bar_button_cancel"
+                        android:id="@+id/btnBack"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/ta_cancel"
-                        android:layout_weight="1"
-                        android:onClick="goBack"/>
+                        android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/action_bar_button_ok"
+                        android:id="@+id/btnOk"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/ta_next"
-                        android:theme="@style/ta_buttonSuccess"
-                        android:onClick="goToStepTwo"/>
+                        android:theme="@style/ta_buttonSuccess" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

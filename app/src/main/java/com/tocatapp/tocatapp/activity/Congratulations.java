@@ -1,10 +1,11 @@
-package com.tocatapp.tocatapp;
+package com.tocatapp.tocatapp.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Congratulations extends AppCompatActivity {
+import com.tocatapp.tocatapp.R;
+
+public class Congratulations extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
