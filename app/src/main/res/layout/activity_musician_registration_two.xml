@@ -7,17 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".activity.MusicianRegistrationTwo"
+    tools:context=".activities.MusicianRegistrationTwo"
     android:background="@drawable/bg_registration">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="false"
-        android:weightSum="1"
-        android:baselineAligned="false">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header">
 
         <ImageView
             android:layout_width="280dp"
@@ -47,112 +45,36 @@
             android:id="@+id/textView4"
             android:layout_gravity="center_horizontal" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/scrollView2" >
+    </LinearLayout>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+    <include layout="@layout/instrument_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header" />
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_guitar"
-                    android:id="@+id/checkBox"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/ta_formViewVerticalGap">
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_bass"
-                    android:id="@+id/checkBox2"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ta_back"
+            android:theme="@style/ta_buttonBack"
+            android:layout_weight="1" />
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_vocals"
-                    android:id="@+id/checkBox3"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_drums"
-                    android:id="@+id/checkBox4"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_drums"
-                    android:id="@+id/checkBox5"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_drums"
-                    android:id="@+id/checkBox6"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_drums"
-                    android:id="@+id/checkBox7"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_drums"
-                    android:id="@+id/checkBox8"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ta_instrument_drums"
-                    android:id="@+id/checkBox9"
-                    style="@style/ta_checkboxView"
-                    android:checked="false" />
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/ta_formViewVerticalGap">
-
-                    <Button
-                        android:id="@+id/btnBack"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/ta_back"
-                        android:theme="@style/ta_buttonBack"
-                        android:layout_weight="1" />
-
-                    <Button
-                        android:id="@+id/btnOk"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/ta_next"
-                        android:theme="@style/ta_buttonSuccess" />
-                </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ta_next"
+            android:theme="@style/ta_buttonSuccess" />
 
     </LinearLayout>
+
 </RelativeLayout>

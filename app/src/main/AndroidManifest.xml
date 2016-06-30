@@ -9,17 +9,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/TocatappTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MusicianRegistrationOne" />
-        <activity android:name=".activity.MusicianRegistrationTwo" />
-        <activity android:name=".activity.MusicianRegistrationThree" />
-        <activity android:name=".activity.Congratulations" />
+        <activity
+            android:name=".activities.MusicianRegistrationOne"
+            android:label="@string/ta_musicianRegistration" />
+        <activity android:name=".activities.MusicianRegistrationTwo" />
+        <activity android:name=".activities.MusicianRegistrationThree" />
+        <activity android:name=".activities.Congratulations" />
+        <activity
+            android:name=".activities.MusiciansList"
+            android:label="@string/ta_musicians_list" />
+        <activity android:name=".activities.MusicianProfile"></activity>
     </application>
 
 </manifest>

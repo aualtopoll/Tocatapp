@@ -41,4 +41,7 @@
     <string name="ta_about_text">©2016, Tocatapp</string>
     <string name="ta_ok">Ok</string>
     <string name="ta_close_app">Exit application</string>
+    <string name="ta_view_musicians">View musicians</string>
+    <string name="ta_view_profile">View profile</string>
+    <string name="ta_musicians_list">Musicians list</string>
 </resources>

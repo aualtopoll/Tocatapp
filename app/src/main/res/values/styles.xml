@@ -2,10 +2,25 @@
 
     <!-- Base application theme. -->
     <style name="TocatappTheme" parent="Theme.AppCompat">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Action bar -->
+        <item name="android:actionBarStyle">@style/ta_actionBar</item>
+        <item name="android:actionMenuTextColor">@color/colorPrimary</item>
+
+        <!-- Support library compat -->
+        <item name="actionBarStyle">@style/ta_actionBar</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="ta_actionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:displayOptions">showHome|useLogo|showTitle</item>
+        <item name="android:textColor">@color/colorActionBarText</item>
+
+        <!-- Support library compat -->
+        <item name="displayOptions">showHome|useLogo|showTitle</item>
     </style>
 
     <style name="ta_center" parent="TocatappTheme">
@@ -71,5 +86,24 @@
     <style name="ta_congratulationsMessage">
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ta_musician_row">
+        <item name="android:paddingBottom">20sp</item>
+    </style>
+
+    <style name="ta_musician_row_name">
+        <item name="android:textColor">@color/colorMusicianName</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ta_normalText</item>
+    </style>
+
+    <style name="ta_musician_row_styles">
+
+    </style>
+
+    <style name="ta_musician_row_instruments">
+        <item name="android:paddingTop">5sp</item>
+
     </style>
 </resources>

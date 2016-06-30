@@ -42,4 +42,7 @@
     <string name="ta_ok">Aceptar</string>
     <string name="ta_close_app">Salir de la aplicación</string>
     <string name="ta_about_text">©2016, Tocatapp</string>
+    <string name="ta_view_musicians">Ver músicos</string>
+    <string name="ta_view_profile">Ver perfil</string>
+    <string name="ta_musicians_list">Lista de músicos</string>
 </resources>

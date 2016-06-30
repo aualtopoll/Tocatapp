@@ -12,7 +12,7 @@ public class IsValid {
     }
 
     public static boolean name(String name) {
-        return find(name, "^[A-Za-z \\-']+$");
+        return find(name, "^[A-Za-záéíóúñÁÉÍÓÚÑ \\-']+$");
     }
 
     public static boolean email(String email) {

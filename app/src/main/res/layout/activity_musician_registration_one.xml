@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".activity.MusicianRegistrationOne"
+    tools:context=".activities.MusicianRegistrationOne"
     android:background="@drawable/bg_registration"
     android:clickable="true">
 
@@ -63,6 +63,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:hint="@string/ta_name"
+                    android:text="Augusto"
                     style="@style/ta_inputView"
                     android:id="@+id/inputFirstName" />
 
@@ -71,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:hint="@string/ta_lastname"
+                    android:text="Toledo"
                     style="@style/ta_inputView"
                     android:id="@+id/inputLastName" />
 
@@ -79,6 +81,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:hint="@string/ta_email"
+                    android:text="atoledo@pcorp.cl"
                     android:id="@+id/inputEmail"
                     style="@style/ta_inputView" />
 
@@ -87,6 +90,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:hint="@string/ta_password"
+                    android:text="123456"
                     android:ems="10"
                     android:id="@+id/inputPassword"
                     style="@style/ta_inputView" />
