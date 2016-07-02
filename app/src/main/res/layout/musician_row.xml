@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/musicianRow"
+    style="@style/ta_musician_row">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/musicianFullName"
+        android:layout_alignParentTop="true"
+        android:text="name"
+        style="@style/ta_musician_row_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/musicianStyles"
+        android:layout_below="@id/musicianFullName"
+        android:text="Styles"
+        style="@style/ta_musician_row_styles"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/musicianInstruments"
+        android:layout_below="@id/musicianStyles"
+        android:text="@string/ta_instrument_guitar"
+        style="@style/ta_musician_row_instruments"
+        />
+
+    <Button
+        style="@style/ta_buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ta_view_profile"
+        android:id="@+id/btnViewProfile"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

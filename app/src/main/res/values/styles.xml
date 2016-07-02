@@ -86,6 +86,7 @@
     <style name="ta_congratulationsMessage">
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="ta_musician_row">
@@ -104,6 +105,17 @@
 
     <style name="ta_musician_row_instruments">
         <item name="android:paddingTop">5sp</item>
+    </style>
 
+    <style name="ta_profileMusicianName">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ta_mediumText</item>
+    </style>
+    <style name="ta_profileInstrumentStyle">
+
+    </style>
+    <style name="ta_musicianVideoTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ta_normalText</item>
     </style>
 </resources>

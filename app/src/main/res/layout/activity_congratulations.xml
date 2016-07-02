@@ -13,23 +13,21 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/ta_logoWidth"
+            android:layout_height="@dimen/ta_logoHeight"
             android:id="@+id/imageView5"
-            android:src="@drawable/logo"
-            android:layout_marginTop="20dp" />
+            android:src="@drawable/logo2"
+            android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ta_congratulations"
             android:id="@+id/textView6"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
             style="@style/ta_congratulationsHeader"/>
 
         <TextView
@@ -37,9 +35,17 @@
             android:layout_height="wrap_content"
             android:text="@string/ta_welcomeToTheNetwork"
             android:id="@+id/textView7"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
             style="@style/ta_congratulationsMessage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ta_nowYouCanFind"
+            android:id="@+id/textView8"
+            style="@style/ta_congratulationsMessage"/>
+
+        <include layout="@layout/btn_list_musicians"/>
+
     </LinearLayout>
 
 </RelativeLayout>

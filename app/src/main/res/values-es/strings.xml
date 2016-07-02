@@ -45,4 +45,14 @@
     <string name="ta_view_musicians">Ver músicos</string>
     <string name="ta_view_profile">Ver perfil</string>
     <string name="ta_musicians_list">Lista de músicos</string>
+    <string name="ta_find_musicians">Encontrar músicos</string>
+    <string name="ta_nowYouCanFind">Ahora puedes encontrar el nuevo integrante de tu banda</string>
+    <string name="ta_musicianProfile">Perfil de músico</string>
+    <string name="ta_audition">Audicionar músico</string>
+    <string name="ta_instrument_s">Instrumento(s): %s</string>
+    <string name="ta_style_s">Estilo(s): %s</string>
+    <string name="ta_playerError">Error al inicializar el reproductor de YouTube %s</string>
+    <string name="ta_actionSettings">Configuración</string>
+    <string name="ta_videos">Videos</string>
+    <string name="ta_auditionRequest">Se ha enviado un mensaje de solicitud de audición al músico</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.tocatapp.tocatapp.helpers;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,15 @@ public class DialogHelper {
         showSimpleOkDialog(context, R.string.ta_about, R.string.ta_about_text);
     }
 
-    private static void showSimpleOkDialog(AppCompatActivity context, int title, int messageId) {
+    public static void showAboutUs(Activity context) {
+        showSimpleOkDialog(context, R.string.ta_about, R.string.ta_about_text);
+    }
+
+    public static void showAuditionResult(Activity context, String musicianName) {
+        showSimpleOkDialog(context, R.string.ta_audition, R.string.ta_auditionRequest);
+    }
+
+    private static void showSimpleOkDialog(Activity context, int title, int messageId) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setMessage(messageId)
                 .setTitle(title);

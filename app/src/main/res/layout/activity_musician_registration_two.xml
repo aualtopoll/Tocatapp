@@ -18,25 +18,18 @@
         android:id="@+id/header">
 
         <ImageView
-            android:layout_width="280dp"
-            android:layout_height="96dp"
+            android:layout_width="@dimen/ta_logoWidth"
+            android:layout_height="@dimen/ta_logoHeight"
             android:id="@+id/imageView3"
-            android:src="@drawable/logo"
+            android:src="@drawable/logo2"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ta_musicianRegistration"
+            android:text="@string/ta_stepTwo"
             android:id="@+id/textView"
             style="@style/ta_bigTitle" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ta_stepTwo"
-            android:id="@+id/textView3"
-            style="@style/ta_mediumTitle" />
 
         <TextView
             android:layout_width="wrap_content"

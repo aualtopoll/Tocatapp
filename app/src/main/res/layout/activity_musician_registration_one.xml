@@ -11,7 +11,11 @@
     android:background="@drawable/bg_registration"
     android:clickable="true">
 
-    <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -21,25 +25,18 @@
         android:baselineAligned="false">
 
         <ImageView
-            android:layout_width="280dp"
-            android:layout_height="96dp"
+            android:layout_width="@dimen/ta_logoWidth"
+            android:layout_height="@dimen/ta_logoHeight"
             android:id="@+id/imageView4"
-            android:src="@drawable/logo"
+            android:src="@drawable/logo2"
             android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ta_musicianRegistration"
+            android:text="@string/ta_stepOne"
             android:id="@+id/textView"
             style="@style/ta_bigTitle" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ta_stepOne"
-            android:id="@+id/textView3"
-            style="@style/ta_mediumTitle" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,77 +45,61 @@
             android:id="@+id/textView4"
             android:layout_gravity="center_horizontal" />
 
-        <ScrollView
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/ta_name"
+            style="@style/ta_inputView"
+            android:id="@+id/inputFirstName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/ta_lastname"
+            style="@style/ta_inputView"
+            android:id="@+id/inputLastName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/ta_email"
+            android:id="@+id/inputEmail"
+            style="@style/ta_inputView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/ta_password"
+            android:ems="10"
+            android:id="@+id/inputPassword"
+            style="@style/ta_inputView" />
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/scrollView" >
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/ta_formViewVerticalGap">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/ta_cancel"
+                android:layout_weight="1" />
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:hint="@string/ta_name"
-                    android:text="Augusto"
-                    style="@style/ta_inputView"
-                    android:id="@+id/inputFirstName" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:hint="@string/ta_lastname"
-                    android:text="Toledo"
-                    style="@style/ta_inputView"
-                    android:id="@+id/inputLastName" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:hint="@string/ta_email"
-                    android:text="atoledo@pcorp.cl"
-                    android:id="@+id/inputEmail"
-                    style="@style/ta_inputView" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:hint="@string/ta_password"
-                    android:text="123456"
-                    android:ems="10"
-                    android:id="@+id/inputPassword"
-                    style="@style/ta_inputView" />
-
-                <LinearLayout
-                    android:layout_alignParentLeft="true"
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/ta_formViewVerticalGap">
-
-                    <Button
-                        android:id="@+id/btnBack"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/ta_cancel"
-                        android:layout_weight="1" />
-
-                    <Button
-                        android:id="@+id/btnOk"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/ta_next"
-                        android:theme="@style/ta_buttonSuccess" />
-                </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
-
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/ta_next"
+                android:theme="@style/ta_buttonSuccess" />
+        </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

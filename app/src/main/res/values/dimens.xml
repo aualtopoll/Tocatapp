@@ -6,4 +6,6 @@
     <dimen name="ta_bigText">30sp</dimen>
     <dimen name="ta_mediumText">25sp</dimen>
     <dimen name="ta_normalText">20sp</dimen>
+    <dimen name="ta_logoWidth">167dp</dimen>
+    <dimen name="ta_logoHeight">175dp</dimen>
 </resources>

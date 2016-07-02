@@ -19,13 +19,21 @@
         <activity
             android:name=".activities.MusicianRegistrationOne"
             android:label="@string/ta_musicianRegistration" />
-        <activity android:name=".activities.MusicianRegistrationTwo" />
-        <activity android:name=".activities.MusicianRegistrationThree" />
-        <activity android:name=".activities.Congratulations" />
+        <activity
+            android:name=".activities.MusicianRegistrationTwo"
+            android:label="@string/ta_musicianRegistration" />
+        <activity
+            android:name=".activities.MusicianRegistrationThree"
+            android:label="@string/ta_musicianRegistration" />
+        <activity
+            android:name=".activities.Congratulations"
+            android:label="@string/ta_musicianRegistration" />
         <activity
             android:name=".activities.MusiciansList"
             android:label="@string/ta_musicians_list" />
-        <activity android:name=".activities.MusicianProfile"></activity>
+        <activity
+            android:name=".activities.MusicianProfile"
+            android:label="@string/ta_musicianProfile" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

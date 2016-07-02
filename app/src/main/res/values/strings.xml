@@ -44,4 +44,14 @@
     <string name="ta_view_musicians">View musicians</string>
     <string name="ta_view_profile">View profile</string>
     <string name="ta_musicians_list">Musicians list</string>
+    <string name="ta_find_musicians">Find musicians</string>
+    <string name="ta_nowYouCanFind">Now you can find your next band member</string>
+    <string name="ta_musicianProfile">Musician\'s profile</string>
+    <string name="ta_audition">Audition musician</string>
+    <string name="ta_instrument_s">Instrument(s): %s</string>
+    <string name="ta_style_s">Style(s): %s</string>
+    <string name="ta_playerError">Error initializing YouTube player %s</string>
+    <string name="ta_actionSettings">Settings</string>
+    <string name="ta_videos">Videos</string>
+    <string name="ta_auditionRequest">An audition request message has been sent to the musician</string>
 </resources>
